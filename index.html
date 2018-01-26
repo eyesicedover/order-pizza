@@ -19,7 +19,7 @@
       </div>
       <div class="well">
         <h4 class="text-center">Craft the pizza of your dreams</h4>
-        <form class="pizzaForm">
+        <form id="pizzaForm">
           <p class="qHeader">Select Pizza Size:</p>
           <select class="form-control" id="size">
             <option>Personal</option>
@@ -28,8 +28,8 @@
             <option>Extra Large</option>
           </select>
           <br>
-          <p class="qHeader">Select Pizza Type:</p>
-          <select class="form-control" id="type">
+          <p class="qHeader">Select Pizza Style:</p>
+          <select class="form-control" id="style">
             <option>Deep Dish</option>
             <option>Regular</option>
             <option>Thin Crust</option>
@@ -46,9 +46,13 @@
             <input type="checkbox" name="topping" value="basil"> Fresh Basil<br>
             <input type="checkbox" name="topping" value="mozarella"> Mozarella Balls<br>
           </div>
-          <button type="submit" class="btn btn-danger" id="submitPizza">Submit</button>
+          <button type="submit" class="btn btn-danger" id="submitPizza">Place in Cart</button>
         </form>
-      <div>
+      </div>
+      <div class="cart">
+        <ul>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

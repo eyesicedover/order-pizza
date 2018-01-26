@@ -13,21 +13,48 @@ https://eyesicedover.github.io/order-pizza/
 
 ## _Specifications_
 
-Program replaces 0 with "Beep!"
-* Example input: 0
-* Example output: "Beep!"
+1. User can select a pizza size and style.
+* Example input: User uses a select box to choose "Medium" and "Deep Dish"
+* Example output: Size: "Medium"
+* Example output: Style: "Deep Dish"
 
-Program replaces 1 with "Boop!"
-* Example input: 1
-* Example output: "Boop!"
 
-Program replaces a number divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that."
-* Example input: 133
-* Example output: "I'm sorry, Dave. I'm afraid I can't do that."
+2. User can select any amount of checkbox toppings.
+* Example input: User clicks on "Pepperoni", "Black Olives", and "Bell Pepper"
+* Example output: The corresponding checkboxes are checked.
 
-Program applies previous logic to a range of numbers determined by the user's input.
-* Example input: 10
-* Example output: BEEP! BOOP! 2 I'm sorry, Dave. I'm afraid I can't do that 4 5 I'm sorry, Dave. I'm afraid I can't do that 7 8 I'm sorry, Dave. I'm afraid I can't do that BOOP!
+3. User submits their pizza with the Put into Cart button and the fields reset.
+* Example input: Size: "Medium", Style: "Deep Dish", Toppings: "Pepperoni", "Black Olives", and "Bell Pepper"
+* Example output: The form is submitted, the form resets.
+
+4. The program stores the user choices in a Pizza object, using a Pizza constructor.
+* Example input: Size: "Medium", Style: "Deep Dish", Toppings: "Pepperoni", "Black Olives", and "Bell Pepper"
+* Example output: newPizza (style: "Deep Dish", size: "Medium",  toppings: ["Pepperoni", "Black Olives", "Bell Pepper"]);
+
+5. The program calculates the price based on size and number of toppings and stores it in the pizza object.
+* Example input: Size: "Medium", Toppings: "Pepperoni", "Black Olives", and "Bell Pepper
+* Example output: newPizza.price = 13
+
+6. The pizza in stored in an array of Pizzas.
+* Example input: newPizza (style: "Deep Dish", size: "Medium",  toppings: ["Pepperoni", "Black Olives", "Bell Pepper"])
+* Example output: newPizzaArray [newPizza];
+
+7. The pizzas are displayed in a Cart on the webpage.
+* Example input: Size: "Medium", Style: "Deep Dish", Toppings: "Pepperoni", "Black Olives", and "Bell Pepper"
+* Example output: Pizza: Medium, Deep Dish
+
+8. The pizzas can be clicked to reveal topping choices.
+* Example input: Click on Pizza: Medium, Deep Dish
+* Example output: Pizza: Medium, Deep Dish, Pepperoni, Black Olives, Bell Pepper
+
+9. The Cart updates a cost total based on the Pizzas
+* Example input: 2 pizzas in array, each with price = 13
+* Example output: The cart total is $26
+
+10. The Cart has a button to Order the pizzas and it asks for address.
+* Example input: User clicks Order button
+* Example output: Form appears for address.
+
 
 ## _Setup/Installation Requirements_
 
