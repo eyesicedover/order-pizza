@@ -6,7 +6,7 @@
 
 ## _Description_
 
-Webpage designed to take user input for a pizza. This page has a header for the name of the company, a form for various parts of the pizza, such as toppings and size of pizza, and a submit button which will then reveal the pizza price.
+Webpage designed to take user input for a pizza. This page has a header for the name of the company, a form for various parts of the pizza, such as toppings and size of pizza, and a submit button for the pizza, which will then reveal the user's cart. As the user adds more pizzas the cart reflects their order and their cart total increases with the pizza prices. At the bottom of the cart there is a button to submit your cart order.
 
 You can also view this project on gh-pages:
 https://eyesicedover.github.io/order-pizza/
@@ -18,7 +18,6 @@ https://eyesicedover.github.io/order-pizza/
 * Example output: Size: "Medium"
 * Example output: Style: "Deep Dish"
 
-
 2. User can select any amount of checkbox toppings.
 * Example input: User clicks on "Pepperoni", "Black Olives", and "Bell Pepper"
 * Example output: The corresponding checkboxes are checked.
@@ -27,7 +26,7 @@ https://eyesicedover.github.io/order-pizza/
 * Example input: Size: "Medium", Style: "Deep Dish", Toppings: "Pepperoni", "Black Olives", and "Bell Pepper"
 * Example output: The form is submitted, the form resets.
 
-4. The program stores the user choices in a Pizza object, using a Pizza constructor.
+4. The program stores the user choices in a newPizza object, using a Pizza constructor.
 * Example input: Size: "Medium", Style: "Deep Dish", Toppings: "Pepperoni", "Black Olives", and "Bell Pepper"
 * Example output: newPizza (style: "Deep Dish", size: "Medium",  toppings: ["Pepperoni", "Black Olives", "Bell Pepper"]);
 
@@ -47,15 +46,34 @@ https://eyesicedover.github.io/order-pizza/
 * Example input: 2 pizzas in array, each with price = 13
 * Example output: The cart total is $26
 
-9. The Cart has a button to Order the pizzas and it asks for address.
+9. The Cart has a button to Order the pizzas, and allows user to decide on either pickup or delivery.
 * Example input: User clicks Order button
-* Example output: Form appears for address.
+* Example output: Two buttons appear, one saying takeout, the other delivery.
 
+10. A. If the user chooses pickup, a form will appear to enter the name of whomever is picking up the order and a submit button.
+* Example input: User clicks Pick Up button
+* Example output: Form appears for the name. Submit button appears.
+
+10. B. When the user submits a name for Pick Up, text will appear thanking them and telling them when to expect their order. A button appears to order more pizza.
+* Example input: User clicks submit button for Pick Up name.
+* Example output: Message appears with name and time of pickup. Restart button appears.
+
+11. A. If the user chooses Delivery, a form will appear for their name and delivery address. A submit button appears.
+* Example input: User clicks Pick Up button
+* Example output: Form appears for the name. Submit button appears.
+
+11. B. When the user submits a name for Delivery, text will appear thanking them and telling them when to expect their order. A button appears to order more pizza.
+* Example input: User clicks submit button for Delivery form.
+* Example output: Message appears with their name, address, and time of delivery. Restart button appears.
+
+12. Clicking on the button for more pizza refreshes the page.
+* Example input: User clicks Order More button.
+* Example output: Page refreshes to start.
 
 ## _Setup/Installation Requirements_
 
 * Clone this repository.
-* Ensure that jquery version 3.2.1 is included, as well as bootstrap.css.
+* Ensure that jquery version 3.3.1 is included, as well as bootstrap.css.
 * Open the page in your preferred web browser.
 
 
