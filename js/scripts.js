@@ -3,7 +3,6 @@ function Pizza(style, size) {
   this.size = size;
   this.toppings = [];
   this.price = 0;
-  this.number = 0;
 }
 
 Pizza.prototype.cost = function() {
@@ -26,14 +25,14 @@ Pizza.prototype.cost = function() {
 }
 
 $(document).ready(function() {
-  var pizzasArray = [];
-  var counter = 0;
+  var total = 0;
+  $(".cartTotal").text(total);
+
   $("#pizzaForm").submit(function(event) {
     event.preventDefault();
     var style = $("#style").val();
     var size = $("#size").val();
     var newPizza = new Pizza(style, size);
-    counter++;
 
     $("input:checkbox[name=topping]:checked").each(function() {
       var toppingChoice = $(this).val();
@@ -41,17 +40,22 @@ $(document).ready(function() {
     });
 
     newPizza.cost();
-    newPizza.number = counter;
-    pizzasArray.push(newPizza);
+    total += newPizza.price;
+    $(".cartTotal").text(total);
+    $(".cartWell").show();;
+    $("#cartHeader").show();
+
+    $("ul#cart").append("<li><span class='cartItem'>" + newPizza.size + " " + newPizza.style + " Pizza" + "</span></li>");
+
+    $(".cartItem").last().click(function() {
+      $("#show-pizza").show();
+      $("#show-pizza h3").text(newPizza.size + " " + newPizza.style + " Pizza");
+      $(".size").text(newPizza.size);
+      $(".style").text(newPizza.style);
+      $(".toppings").text(newPizza.toppings);
+      $(".cost").text(newPizza.price);
+    });
+
     $("#pizzaForm")[0].reset();
-
-    if (counter === 1) {
-      $(".cart").show();
-    }
-    counter++;
-
-    $(".cart").append("<li>" + "Pizza " + newPizza.number + ": " + newPizza.size + ", " + newPizza.style + "</li>");
-
-
   });
 });

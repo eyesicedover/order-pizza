@@ -35,23 +35,19 @@ https://eyesicedover.github.io/order-pizza/
 * Example input: Size: "Medium", Toppings: "Pepperoni", "Black Olives", and "Bell Pepper
 * Example output: newPizza.price = 13
 
-6. The pizza in stored in an array of Pizzas.
-* Example input: newPizza (style: "Deep Dish", size: "Medium",  toppings: ["Pepperoni", "Black Olives", "Bell Pepper"])
-* Example output: newPizzaArray [newPizza];
-
-7. The pizzas are displayed in a Cart on the webpage.
+6. The pizzas are displayed in a Cart on the webpage.
 * Example input: Size: "Medium", Style: "Deep Dish", Toppings: "Pepperoni", "Black Olives", and "Bell Pepper"
 * Example output: Pizza: Medium, Deep Dish
 
-8. The pizzas can be clicked to reveal topping choices.
+7. The pizzas can be clicked to reveal topping choices and price.
 * Example input: Click on Pizza: Medium, Deep Dish
 * Example output: Pizza: Medium, Deep Dish, Pepperoni, Black Olives, Bell Pepper
 
-9. The Cart updates a cost total based on the Pizzas
+8. The Cart updates a cost total based on the Pizzas
 * Example input: 2 pizzas in array, each with price = 13
 * Example output: The cart total is $26
 
-10. The Cart has a button to Order the pizzas and it asks for address.
+9. The Cart has a button to Order the pizzas and it asks for address.
 * Example input: User clicks Order button
 * Example output: Form appears for address.
 

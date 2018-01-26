@@ -15,10 +15,10 @@
       <div class="jumbotron text-center">
         <h1>Stef's Chicago Pizzaria</h1>
         <hr>
-        <p>Authentic - Hand Made - Deep Dish</p>
+        <p>Authentic - Farm to Table - Deep Dish</p>
       </div>
       <div class="well">
-        <h4 class="text-center">Craft the pizza of your dreams</h4>
+        <h4 class="text-center">-Craft the pizza of your dreams-</h4>
         <form id="pizzaForm">
           <p class="qHeader">Select Pizza Size:</p>
           <select class="form-control" id="size">
@@ -37,21 +37,43 @@
           <br>
           <div class="form-group">
             <p class="qHeader">Toppings:</p>
-            <input type="checkbox" name="topping" value="pepperoni"> Pepperoni<br>
-            <input type="checkbox" name="topping" value="sausage"> Sausage<br>
-            <input type="checkbox" name="topping" value="ham"> Ham<br>
-            <input type="checkbox" name="topping" value="olive"> Black Olives<br>
-            <input type="checkbox" name="topping" value="bell"> Bell Pepper<br>
-            <input type="checkbox" name="topping" value="pineapple"> Pineapple<br>
-            <input type="checkbox" name="topping" value="basil"> Fresh Basil<br>
-            <input type="checkbox" name="topping" value="mozarella"> Mozarella Balls<br>
+            <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="topping" value="Sausage"> Sausage<br>
+            <input type="checkbox" name="topping" value="Ham"> Ham<br>
+            <input type="checkbox" name="topping" value="Olive"> Black Olives<br>
+            <input type="checkbox" name="topping" value="Bell"> Bell Pepper<br>
+            <input type="checkbox" name="topping" value="Pineapple"> Pineapple<br>
+            <input type="checkbox" name="topping" value="Basil"> Fresh Basil<br>
+            <input type="checkbox" name="topping" value="Mozarella"> Mozarella Balls<br>
           </div>
-          <button type="submit" class="btn btn-danger" id="submitPizza">Place in Cart</button>
+          <button type="submit" class="btn btn-primary" id="submitPizza">Place in Cart</button>
         </form>
       </div>
-      <div class="cart">
-        <ul>
-        </ul>
+      <div class="text-center">
+        <h3>Your Cart</h3>
+        <h4>Cart Total: $<span class="cartTotal"></span></h4>
+      </div>
+      <div class="well cartWell">
+        <div class="row">
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-5">
+            <ul id="cart">
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <div id="show-pizza">
+              <h3></h3>
+              <p>Size: <span class="size"></span></p>
+              <p>Style: <span class="style"></span></p>
+              <p>Toppings: <span class="toppings"></span></p>
+              <h4>Cost: $<span class="cost"></span></h4>
+            </div>
+          </div>
+          <div class="col-md-1">
+          </div>
+        </div>
+        <button type="button" class="btn btn-danger text-center" id="submitCart">Submit Order</button>
       </div>
     </div>
   </body>
