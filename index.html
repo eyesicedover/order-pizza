@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Stef's Chicago Pizza</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron text-center">
+        <h1>Stef's Chicago Pizzaria</h1>
+        <hr>
+        <p>Authentic - Hand Made - Deep Dish</p>
+      </div>
+      <div class="well">
+        <h4 class="text-center">Craft the pizza of your dreams</h4>
+        <form class="pizzaForm">
+          <p class="qHeader">Select Pizza Size:</p>
+          <select class="form-control" id="size">
+            <option>Personal</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Extra Large</option>
+          </select>
+          <br>
+          <p class="qHeader">Select Pizza Type:</p>
+          <select class="form-control" id="type">
+            <option>Deep Dish</option>
+            <option>Regular</option>
+            <option>Thin Crust</option>
+          </select>
+          <br>
+          <div class="form-group">
+            <p class="qHeader">Toppings:</p>
+            <input type="checkbox" name="topping" value="pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="topping" value="sausage"> Sausage<br>
+            <input type="checkbox" name="topping" value="ham"> Ham<br>
+            <input type="checkbox" name="topping" value="olive"> Black Olives<br>
+            <input type="checkbox" name="topping" value="bell"> Bell Pepper<br>
+            <input type="checkbox" name="topping" value="pineapple"> Pineapple<br>
+            <input type="checkbox" name="topping" value="basil"> Fresh Basil<br>
+            <input type="checkbox" name="topping" value="mozarella"> Mozarella Balls<br>
+          </div>
+          <button type="submit" class="btn btn-danger" id="submitPizza">Submit</button>
+        </form>
+      <div>
+    </div>
+  </body>
+</html>
